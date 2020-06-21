@@ -10,4 +10,4 @@ RUN set -x \
     && wget -qO - http://packages.confluent.io/deb/$CONFLUENT_VERSION/archive.key | apt-key add - \
     && add-apt-repository "deb [arch=amd64] http://packages.confluent.io/deb/$CONFLUENT_VERSION stable main" \
     && apt-get update \
-    && apt-get install -y confluent-platform-oss-2.11
+    && apt-get install -y confluent-platform-oss-2.12
